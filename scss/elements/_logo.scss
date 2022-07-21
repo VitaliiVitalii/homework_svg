@@ -1,0 +1,38 @@
+@use './variables/variables.scss' as *;
+
+.logo {
+    width: $logo;
+
+    &__link {
+        display: block;
+
+
+        &-caption {
+            font-family: $font_secondary;
+            font-size: 35px;
+            line-height: 35px;
+            color: $primary;
+            position: relative;
+            padding: 0 0 0 45px;
+
+        }
+
+        &-caption::before {
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background: url(../../images/logo/icon.png) 0 0 no-repeat;
+            top: 2px;
+            left: 0;
+
+        }
+
+    }
+
+}
+
+.caption_light {
+    color: $default;
+    
+}

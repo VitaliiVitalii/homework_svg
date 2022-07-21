@@ -1,0 +1,134 @@
+@use './variables/variables.scss' as *;
+
+.main {
+    padding: 0 0 100px 0;
+
+    &__subtitle {
+        text-transform: uppercase;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: $secondary;
+    }
+
+    &__title {
+        font-family: $font_ralely;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+        color: $primary;
+        padding: 12px 0 34px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__column {
+        display: flex;
+        justify-content: start;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid $bg;
+        border-radius: 8px;
+        width: $column;
+        padding: 40px 0 40px 40px;
+
+        &:hover  {
+            border: 1px solid $primary_ligth;
+
+        }
+
+        &:hover .icon-box  {
+            border: 1px solid rgba(61, 179, 112, 0.1);
+
+        }
+
+        &:hover #line_hover {
+            fill: #52C29D;
+
+        }
+
+        &:hover #bg_hover {
+            fill:#E1F4F5;
+
+        }
+
+        &:hover #bg_dark_hover {
+            fill:#CAEFF2;
+
+        }
+
+        &:hover #bg_line_hover {
+            fill:#F4FEFF;
+
+        }
+        
+        &-item {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+}
+
+
+.column-item {
+
+    &__icon {
+        width: 65px;
+        height: 65px;
+
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 21px;
+        letter-spacing: 0.2px;
+        color: $primary;
+        padding: 30px 0 15px;
+
+    }
+
+    &__text {
+        font-weight: 400;
+        line-height: 28px;
+        color: $primary;
+        width: $text;
+
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 700;
+        line-height: 19px;
+        color: $primary_ligth;
+        padding: 24px 0 0 0;
+
+
+    }
+}
+
+.icon-box {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    &__image {
+        width: 40px;
+        height: 36px;
+        
+    }
+}
+
+
